@@ -143,6 +143,8 @@ Stores denormalized event data for fast search, filtering.
 }
 ```
 
+#### Trade-off
+- Having separate read model is compromising for eventual consistency. Data in read-model is eventually-consistent with master data in recognition topic. 
 #### Write Scaling
 - Multiple primary shards for parallel indexing.
 - Distribute shards across Elasticsearch nodes.
@@ -161,7 +163,7 @@ Stores denormalized event data for fast search, filtering.
 
 ## Step 4: Read API (Client Access Layer)
 
-Serves queries against Elasticsearch for UIs, dashboards, or external systems.
+Serves queries against Elasticsearch for UIs, dashboards, or external systems. 
 
 #### Query Features
 - Filter by:
