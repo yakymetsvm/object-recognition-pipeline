@@ -1,0 +1,14 @@
+{
+  "type": "record",
+  "name": "RecognitionEvent",
+  "namespace": "com.recognition",
+  "fields": [
+    { "name": "timestamp", "type": "long" },
+    { "name": "source", "type": "string" },
+    { "name": "uniqueId", "type": "string" },
+    { "name": "lat", "type": "double" },
+    { "name": "lon", "type": "double" },
+    { "name": "type", "type": "string" },
+    { "name": "confidence", "type": "float" }
+  ]
+}
