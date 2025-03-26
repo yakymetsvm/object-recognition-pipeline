@@ -89,7 +89,7 @@ Kafka acts as the central event bus and system of record for all recognition eve
 
 ## Step 3: Read Model Population (Kafka → Elasticsearch)
 
-### 3.1 Connector
+### 3.1 Connector (the part I've implemented. Implementation contains - reading from kafka topic, writing into elastic read model with e2e test using testcontainer)   
 
 Connector reads from the `recognitions` topic and writes to the Elasticsearch read model. Essentially can be 
 
